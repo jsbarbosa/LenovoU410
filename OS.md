@@ -14,3 +14,9 @@ sudo apt-get install -y boot-repair && boot-repair
 5. Mount the EFI partition: `sudo mount -t vfat /dev/sdb2 /mnt`
 6. Copy the `*.efi` from ubuntu folder into `/boot`. `sudo cp /ubuntu/*.efi /boot`
 7. Restart.
+8. Install nvidia drivers.
+```
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt-get update
+sudo apt-get install nvidia-340
+```
